@@ -6,7 +6,7 @@ const doc = {
     description: "Description",
   },
   host: process.env.SWAGGER_HOST || "localhost:3000",
-  schemes: ["http", "https"],
+  schemes: [process.env.SWAGGER_HOST ? "https" : "http"],
 };
 
 const outputFile = "./src/swaggerExport/swagger_output";
