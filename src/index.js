@@ -53,12 +53,13 @@ app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 require("./endpoints")(app);
 
 //server
-http.createServer(app).listen(PORT, (err) => {
+const _port = PORT || 3000;
+http.createServer(app).listen(_port, (err) => {
   if (err) throw err;
   console.log(
-    `> Server ` + chalk.underline(chalk.blue(`http://localhost:${PORT}`))
+    `> Server ` + chalk.underline(chalk.blue(`http://localhost:${_port}`))
   );
   console.log(
-    `> Doc ` + chalk.underline(chalk.blue(`http://localhost:${PORT}/doc`))
+    `> Doc ` + chalk.underline(chalk.blue(`http://localhost:${_port}/doc`))
   );
 });

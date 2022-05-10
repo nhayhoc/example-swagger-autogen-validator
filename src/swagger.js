@@ -5,6 +5,8 @@ const doc = {
     title: "My API",
     description: "Description",
   },
+  host: process.env.SWAGGER_HOST || "localhost:3000",
+  schemes: ["http", "https"],
 };
 
 const outputFile = "./src/swaggerExport/swagger_output";
