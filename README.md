@@ -1,4 +1,4 @@
-live example: 
+live example: https://auto-swagger-validator-example.herokuapp.com/doc
 
 to start
 clone this repository
