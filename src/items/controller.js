@@ -7,7 +7,7 @@ exports.getAll = (req, res, next) => {
     return res.status(400).json({ error: validation.errors.all() });
   //
   //   let data = ....
-  /* #swagger.parameters[200] = {
+  /* #swagger.responses[200] = {
     schema: { $ref: '#/definitions/UserGetAll' }
   } */
   res.json(data);
