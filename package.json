@@ -1,0 +1,22 @@
+{
+  "name": "example-swagger-autogen-validator",
+  "version": "1.0.0",
+  "main": "./src/swagger.js",
+  "scripts": {
+    "start": "node ./src/swagger.js",
+    "dev": "nodemon ./src/swagger.js"
+  },
+  "publishConfig": {
+    "registry": "http://disable.publish"
+  },
+  "dependencies": {
+    "chalk": "4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.3.3",
+    "morgan": "^1.10.0",
+    "swagger-autogen-validator": "^2.21.4",
+    "swagger-ui-express": "^4.3.0",
+    "validatorjs": "^3.22.1"
+  }
+}
