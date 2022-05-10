@@ -16,7 +16,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //cors
-const CORS_WHITELIST = ["https://example.domain"];
+const CORS_WHITELIST = [
+  "https://example.domain",
+  "https://auto-swagger-validator-example.herokuapp.com",
+];
 const corsOptions = {
   origin: function (origin, callback) {
     if (
